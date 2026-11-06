@@ -1,8 +1,10 @@
 ## Boombox Controller Updated
 
-This is a forked version of KodorTeh's Boombox Controller mod for Lethal Company, updated to use the newest version of yt-dlp and support the latest version of Lethal Comapny (V81 as of writing this). If there's any issues, make an issue report on the github page. If I don't reply in a couple of days, message me on discord (eyasu.) saying "Fix your mod, stupidhead" then I'll get on it whenever I can.
+This is a forked version of KodorTeh's Boombox Controller mod for Lethal Company, updated to use the newest version of yt-dlp and support the latest version of Lethal Comapny (V81 as of writing this). 
+If there's any issues, make an issue report on the github page. If I don't reply in a couple of days, message me on discord (eyasu.) saying "Fix your mod, stupidhead" then I'll get on it whenever I can.
 
 Github: https://github.com/Cinder4198/Boombox-Controller
+
 Original Mod: https://thunderstore.io/c/lethal-company/p/KoderTeh/Boombox_Controller/wiki
 
 ## IMPORTANT
