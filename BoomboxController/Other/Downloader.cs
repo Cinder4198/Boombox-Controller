@@ -7,6 +7,10 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using BepInEx.Logging;
+using BepInEx;
+using System.Security.Cryptography;
+using System.Drawing;
 
 namespace BoomboxController
 {
@@ -38,8 +42,20 @@ namespace BoomboxController
             {
                 Thread thread = new Thread(() => DownloadFiles(new Uri("https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe"), @"BoomboxController\other\yt-dlp.exe"));
                 thread.Start();
-            }
+            }/* else
+            {
+                Thread thread = new Thread(() => CompareYTDLPfile());
+                thread.Start();
+            } */
             Thread.CurrentThread.Abort();
+        }
+
+        private static void CompareYTDLPfile()
+        {
+            String currentHash = GetLocalMD5Checksum(@$"BoomboxController\other\yt-dlp.exe");
+            Plugin.instance.Log("Current yt-dlp Hash: " + currentHash);
+            String updatedHash = GetOnlineMD5Checksum("https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe");
+            Plugin.instance.Log("Updated yt-dlp Hash: " + currentHash);
         }
 
         public static bool Unpacking()
@@ -64,5 +80,28 @@ namespace BoomboxController
                 return false;
             }
         }
+    public static string GetLocalMD5Checksum(string filename) {
+	    using (var md5 = System.Security.Cryptography.MD5.Create())
+	        {
+		        using (var stream = System.IO.File.OpenRead(filename))
+	        	{
+			        var hash = md5.ComputeHash(stream);
+			        return BitConverter.ToString(hash).Replace("-", "");
+		        }
+	        }
+        }
+    public static string GetOnlineMD5Checksum(string url) {
+	    using (var md5 = System.Security.Cryptography.MD5.Create())
+	        {
+
+                WebClient web = new WebClient();
+		        using (var stream = web.OpenRead(url))
+	        	{
+			        var hash = md5.ComputeHash(stream);
+			        return BitConverter.ToString(hash).Replace("-", "");
+		        }
+	        }
+        }
     }
+    
 }

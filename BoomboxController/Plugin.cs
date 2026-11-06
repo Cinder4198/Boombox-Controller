@@ -70,6 +70,7 @@ namespace BoomboxController
                 }
             }
             controller.InitializationBoombox();
+            Log("AGHKGHSDJFLSDJLFKJSKLD: ");
         }
 
         public void SwitchLanguage()

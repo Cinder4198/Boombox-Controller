@@ -1,33 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "E:\\source\\repos\\BoomboxController\\BoomboxController\\BoomboxController.csproj": {}
+    "/home/eyasu/.vscode/Projects/Boombox-Controller/BoomboxController/BoomboxController.csproj": {}
   },
   "projects": {
-    "E:\\source\\repos\\BoomboxController\\BoomboxController\\BoomboxController.csproj": {
+    "/home/eyasu/.vscode/Projects/Boombox-Controller/BoomboxController/BoomboxController.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\source\\repos\\BoomboxController\\BoomboxController\\BoomboxController.csproj",
+        "projectUniqueName": "/home/eyasu/.vscode/Projects/Boombox-Controller/BoomboxController/BoomboxController.csproj",
         "projectName": "BoomboxController",
-        "projectPath": "E:\\source\\repos\\BoomboxController\\BoomboxController\\BoomboxController.csproj",
-        "packagesPath": "C:\\Users\\KoderTech\\.nuget\\packages\\",
-        "outputPath": "E:\\source\\repos\\BoomboxController\\BoomboxController\\obj\\",
+        "projectPath": "/home/eyasu/.vscode/Projects/Boombox-Controller/BoomboxController/BoomboxController.csproj",
+        "packagesPath": "/home/eyasu/.nuget/packages/",
+        "outputPath": "/home/eyasu/.vscode/Projects/Boombox-Controller/BoomboxController/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Visual Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\KoderTech\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/eyasu/.vscode/Projects/Boombox-Controller/BoomboxController/NuGet.Config",
+          "/home/eyasu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net46"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.bepinex.dev/v3/index.json": {}
         },
         "frameworks": {
           "net46": {
@@ -43,8 +38,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        }
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net46": {
@@ -82,13 +78,7 @@
               "version": "[2021.3.33, )"
             }
           },
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.100, 9.0.100]"
-            }
-          ],
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.308/RuntimeIdentifierGraph.json"
         }
       }
     }
