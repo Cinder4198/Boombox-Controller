@@ -17,7 +17,7 @@ namespace BoomboxController
 
         public static BoomboxController controller;
 
-        public const string Version = "1.2.7";
+        public const string Version = "1.2.8";
 
         private void Awake()
         {
@@ -70,7 +70,7 @@ namespace BoomboxController
                 }
             }
             controller.InitializationBoombox();
-            Log("AGHKGHSDJFLSDJLFKJSKLD: ");
+            //Log("AGHKGHSDJFLSDJLFKJSKLD: ");
         }
 
         public void SwitchLanguage()

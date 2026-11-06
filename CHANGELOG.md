@@ -1,3 +1,8 @@
+-   **1.2.8**
+
+	-	When downloading yt-dlp, the mod will now fetch the latest verion.
+	-	(If you still get the "Invalid Link" error, go into your Lethal Company folder via steam, open "BoomboxController" and delete the "other" folder. The mod will redownload the updated dependencies next time you start the game.)
+	
 -   **1.2.2**
 
 	-	Another blocked link has been added.

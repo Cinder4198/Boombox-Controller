@@ -1,3 +1,23 @@
+## Boombox Controller Updated
+
+This is a forked version of KodorTeh's Boombox Controller mod for Lethal Company, updated to use the newest version of yt-dlp and support the latest version of Lethal Comapny (V81 as of writing this). If there's any issues, make an issue report on the github page. If I don't reply in a couple of days, message me on discord (eyasu.) saying "Fix your mod, stupidhead" then I'll get on it whenever I can.
+
+Github: https://github.com/Cinder4198/Boombox-Controller
+Original Mod: https://thunderstore.io/c/lethal-company/p/KoderTeh/Boombox_Controller/wiki
+
+## IMPORTANT
+
+If you get an "Invalid Link" error when using the "/bplay" command, the mod is likely using an older version of it's dependencies. You can fix this by:
+
+1. Going into your Lethal Company Files via right clicking it in steam -> Manage -> Browse Local Files
+
+2. Opening the "BoomboxController" folder
+
+3. Deleting the "other" folder
+
+Now the next time you launch the game with the mod, it will download the latest version of the dependencies. Have Fun!
+
+### Original ReadMe Text:
 ## Boombox Controller
 
 This mod allows you to easily upload a track to the boombox by using chat
